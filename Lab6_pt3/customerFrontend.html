@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+<head>
+<script src="formChecker.js"></script>
+
+<link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+
+<h1> Items for sale:</h1><br>
+
+<form class="shop" action="customerBackend.php"  method="post" onsubmit="return validate()">
+
+	
+<input type="number" id="quantity1" name="quantity1" min="0">$3.00 Cat food<br>
+
+<input type="number" id="quantity2" name="quantity2" min="0">$5.00 Cat toy<br>
+
+<input type="number" id="quantity3" name="quantity3" min="0">$10.00 Cat bed<br>
+
+
+username:<input type="email" id="uname" name="uname"><br>
+password:<input type="password" id="pwd" name="pwd"><br><br>
+
+
+<input type="radio" name="ship1"  value="1"> 7 day: free<br>
+<input type="radio" name="ship1" value="2"> Overnight: $50.00<br>
+<input type="radio" name="ship1"  value="3"> 3 day: $5.00<br>
+
+<input type="submit" value="Submit"><br>
+<input type="reset">
+</form>
+<script="formChecker.js"></script>
+</body>
+</html>
